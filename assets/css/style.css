@@ -1,0 +1,309 @@
+:root{
+    --color--main:#e17055;
+    --color--black:#2d3436;
+}
+*{
+    box-sizing: inherit;
+}
+html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/* Base */
+.active_btn{
+    color: var(--color--main);
+    font-size: 1.4rem;
+}
+.active_page{
+    border-bottom: 2px solid var(--color--main);
+}
+.hover_active:hover{
+    border-bottom: 2px solid var(--color--main);
+    cursor: pointer;
+}
+.arrow{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+/* Start */
+.container{
+    width: 100%;
+}
+/* Header */
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dfe6e9;
+    /* position: fixed; */
+}
+/* Logo */
+#logo_m{
+    font-size: 60px;
+    color: #2d3436;
+}
+.header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_logo h1{
+    color: #d63031;
+}
+.header_logo:hover{
+    cursor: pointer;
+}
+/* Nav-menu */
+.header_nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 3px 0;
+    margin: 0 25px;
+    font-weight: 600;  
+}
+.header_nav a:hover{
+    border-bottom: 2px solid var(--color--main);
+}
+/* login-icon */
+.header_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 36px;
+}
+.login_res:hover{
+    cursor: pointer;
+}
+/* Icon-search-login-store */
+.icon a{
+    text-decoration: none;
+    color: #2d3436;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 12.5px;
+}
+/* Containt main */
+/* Base */
+.container_content{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('../img/hero-1.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+.back_content{
+    flex-basis: 15%;
+    padding: 5px;
+    text-align: center;
+}
+.back_content:hover{
+    transition: all 0.3s;
+    transform: scale(1.5);
+}
+.main_content{
+    flex-basis: 70%;
+}
+.next_content{
+    flex-basis: 15%;
+    text-align: center;
+}
+.next_content:hover{
+    transition: all 0.3s;
+    transform: scale(1.5);
+}
+.content{
+    margin-top: 230px;
+    width: 460px;
+}
+/* Text */
+.tittle{
+    color: var(--color--main);
+    font-weight: 700;
+    font-size: 16px;
+}
+.content h1{
+    font-size: 48px;
+}
+.content p{
+    line-height: 1.6rem;
+    color: #3d3d3d;
+}
+/* button-Shop */
+.button_shop{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #2d3436;
+    margin-top: 42px;
+    border-radius: 5px;
+}
+.button_shop:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: var(--color--main);
+}
+.button_shop h3{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin-right: 8px;
+}
+/* socical */
+.social{
+    margin-top: 180px; 
+}
+.social a{
+    color: var(--color--black);
+    padding: 5px;
+    margin: 0 10px;
+}
+/* Filter */
+.fillter{
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fillter span h3{
+    padding: 10px;
+    font-size: 24px;
+    margin: 0 30px;
+}
+/* list_img */
+.list_img{
+    width: 80%;
+    height:auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    /* background-color: rgba(255, 255, 255, 0.623); */
+}
+.frame_img{
+    width: 270px;
+    padding: 5px;
+    margin: 12px;
+    flex-basis: 23%;
+   
+}
+.frame_img:hover{
+    transition: 0.3s;
+    transform: scale(1.08);
+}
+.frame_img img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu_store{
+    margin-top: 8px;
+    width: 80%;
+    margin: auto;
+}
+.icon_menu{
+    padding: 2px;
+    text-align: center;
+    font-size: 1.3rem;
+   
+}
+/* Xem them */
+.social_insta{
+   width: 80%;
+   height: 520px;
+   margin: 50px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background-color: #ffeaa7; */
+}
+.social_insta_frame--img{
+    width: 750px;
+    /* float: left; */
+    flex-basis: 70%;
+}
+.social_insta_frame--img img{
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+}
+.frame_text h1{
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+}
+#hastag{
+    margin-top: 80px;
+    color: #d63031;
+    font-size: 2rem;
+}
+/* Footer base */
+footer{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: #94abb1;
+    padding: 40px;
+}
+.footer_conten{
+    flex-basis: 33.333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+.footer_shop{
+    flex-basis: 33.333%;
+}
+.footer_email{
+    flex-basis: 33.333%;
+    width: 70%;
+}
+/* Logo footer */
+.footer_logo{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+.footer_shop{
+    padding: 0 30px;
+}
+.text_footer{
+    color: white;
+    font-size: 1.3rem;
+}
+.none{
+    width: fit-content;
+    text-decoration: none;
+    list-style-type: none;
+    color: #94abb1; 
+    padding: 8px 0px;
+}
+.input_email{
+    width: 100%;
+}
+.email{
+    width: 80%;
+    height: 30px;
+}
